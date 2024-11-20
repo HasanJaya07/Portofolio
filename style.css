@@ -1,0 +1,258 @@
+/* Global font styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Mengatur 
+   font yang mudah dibaca */
+    color: #333; /* Warna teks abu-abu gelap */
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu sangat terang 
+   */
+   animation: bg 7s infinite;
+   }
+
+ @keyframes bg {
+    0%{
+        background-color: #1eff00;
+    }
+    25% {
+        background-color: rgb(0, 17, 255);
+    }
+    50% {
+        background-color: rgb(174, 0, 255);
+    }
+    85% {
+        background-color: rgb(255, 0, 179);
+    }
+    100% {
+        background-color: rgb(255, 238, 0);
+    }
+ }
+
+   /* Navbar styling */
+   .navbar {
+    transition: background-color 0.3s; /* Transisi warna background agar 
+   lebih halus */
+    background-color: #0066ff; /* Warna abu-abu lembut sebagai warna default 
+   navbar */
+   }
+   .navbar.scrolled {
+    background-color: #00e1ff; /* Warna abu-abu lebih gelap saat scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan ringan untuk efek 
+   kedalaman */
+   }
+   .nav-link {
+    color: white; /* Warna putih untuk tautan navbar */
+   }
+   .nav-link:hover {
+    color: #adb5bd; /* Warna abu-abu terang saat di-hover */
+    transition: color 0.3s ease; /* Transisi warna tautan agar lebih halus */
+   }
+   .nav-link.active {
+    color: #adb5bd; /* Warna abu-abu terang untuk tautan aktif */
+    font-weight: bold; /* Membuat teks tautan aktif menjadi tebal */
+   }
+   /* Hero Section styling */
+   #hero {
+    background: linear-gradient(
+    to bottom right,
+    #0066ff,
+    #c1dcf7
+    ); /* Gradien dari abu-abu lembut ke abu-abu terang */
+    color: white; /* Warna teks putih untuk kontras */
+    padding: 120px 0; /* Memberikan padding vertikal */
+    margin-bottom: 80px; /* Jarak bawah untuk memisahkan dari section 
+   berikutnya */
+    border-radius: 15px; /* Sudut melengkung untuk tampilan yang lembut */
+   }
+   #hero h1 {
+    margin-top: 50px; /* Memberikan jarak atas pada judul */
+   }
+
+ .hs{
+    width: 350px;
+    height: 350px;
+ }
+
+   /* Tombol */
+   .btn-primary.hover-effect {
+    background-color: #adb5bd; /* Warna abu-abu terang sebagai background */
+    border: none; /* Menghilangkan border */
+    color: #333333; /* Warna teks abu-abu gelap */
+    border-radius: 50px; /* Membuat tombol menjadi bulat */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi 
+   pada warna dan transformasi */
+   }
+   .btn-primary.hover-effect:hover {
+    background-color: #5aff39; /* Warna abu-abu lembut saat di-hover */
+    transform: scale(1.05); /* Efek memperbesar sedikit saat di-hover */
+   }
+   /* About Section styling */
+   #about {
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu sangat terang 
+   */
+    padding: 100px 0; /* Padding vertikal */
+    margin-bottom: 80px; /* Jarak bawah */
+    border-radius: 15px; /* Sudut melengkung */
+   }
+   #about img {
+    border-radius: 50%; /* Membuat gambar profile menjadi lingkaran */
+   }
+   #about h2 {
+    color: #343a40; /* Warna abu-abu gelap untuk judul */
+    margin-bottom: 30px; /* Jarak bawah antara judul dan konten */
+   }
+   #about p {
+    color: #6c757d; /* Warna teks abu-abu lembut */
+   }
+   /* Skills Section */
+   #skills {
+    background-color: #e9ecef; /* Warna abu-abu terang untuk latar belakang 
+   */
+    padding: 100px 50px; /* Padding di dalam container */
+    margin-bottom: 80px; /* Jarak bawah */
+    border-radius: 15px; /* Sudut melengkung */
+    max-width: 1200px; /* Membatasi lebar maksimal container */
+    margin-left: auto; /* Membuat container rata tengah */
+    margin-right: auto; /* Membuat container rata tengah */
+   }
+   #skills h2 {
+    color: #343a40; /* Warna abu-abu gelap untuk judul */
+    margin-bottom: 40px; /* Jarak bawah antara judul dan konten */
+   }
+   #skills i {
+    color: #6c757d; /* Warna abu-abu lembut untuk ikon */
+    margin-bottom: 20px; /* Jarak bawah untuk ikon */
+   }
+   #skills h4 {
+    color: #343a40; /* Warna abu-abu gelap untuk subjudul */
+    margin-top: 15px; /* Jarak atas untuk subjudul */
+   }
+   #skills p {
+    color: #6c757d; /* Warna teks abu-abu lembut */
+   }
+   /* Portfolio styling */
+   #portfolio {
+    background-color: #dee2e6; /* Warna abu-abu terang untuk latar belakang 
+   */
+    padding: 100px 50px; /* Padding di dalam container */
+    margin-bottom: 80px; /* Jarak bawah */
+    border-radius: 15px; /* Sudut melengkung */
+    max-width: 1200px; /* Membatasi lebar maksimal container */
+    margin-left: auto; /* Membuat container rata tengah */
+    margin-right: auto; /* Membuat container rata tengah */
+   }
+   #portfolio h2 {
+    color: #343a40; /* Warna abu-abu gelap untuk judul */
+    margin-bottom: 40px; /* Jarak bawah antara judul dan konten */
+   }
+   .card {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi 
+   untuk efek hover */
+    background-color: #e9ecef; /* Warna background abu-abu terang */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Bayangan ringan */
+    padding: 20px; /* Padding dalam card */
+    margin-bottom: 30px; /* Jarak bawah antar card */
+   }
+   .card.hover-card:hover {
+    transform: scale(1.05); /* Efek memperbesar sedikit saat di-hover */
+    background-color: #dee2e6; /* Warna background lebih terang saat di-hover 
+   */
+   }
+   .card-title {
+    color: #343a40; /* Warna abu-abu gelap untuk judul card */
+    margin-bottom: 15px; /* Jarak antara judul project dan teks deskripsi */
+   }
+   /* Contact Section styling */
+   #contact {
+    background-color: #c4c4c4; /* Warna abu-abu sangat terang untuk latar 
+   belakang */
+    padding: 100px 50px; /* Padding di dalam container */
+    margin-bottom: 80px; /* Jarak bawah */
+    border-radius: 15px; /* Sudut melengkung */
+    max-width: 800px; /* Membatasi lebar maksimal container */
+    margin-left: auto; /* Membuat container rata tengah */
+    margin-right: auto; /* Membuat container rata tengah */
+   }
+   #contact h2 {
+    color: #343a40; /* Warna abu-abu gelap untuk judul */
+    margin-bottom: 40px; /* Jarak bawah antara judul dan konten */
+   }
+   .contact-form {
+    background-color: #ffffff; /* Warna putih untuk form */
+    padding: 30px; /* Padding di dalam form */
+    border-radius: 15px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+   }
+   .contact-form label {
+    color: #343a40; /* Warna abu-abu gelap untuk label */
+   }
+   .contact-form input,
+   .contact-form textarea {
+    border-radius: 10px; /* Sudut melengkung untuk input dan textarea */
+    border: 1px solid #ced4da; /* Border abu-abu terang */
+    padding: 10px; /* Padding dalam input */
+    width: 100%; /* Lebar penuh */
+    margin-bottom: 20px; /* Jarak bawah */
+   }
+   .contact-form input[type="checkbox"] {
+    width: auto; /* Lebar otomatis untuk checkbox */
+    margin-right: 10px; /* Jarak kanan untuk checkbox */
+   }
+   .contact-form .form-check-label {
+    margin-bottom: 20px; /* Jarak bawah */
+    color: #343a40; /* Warna abu-abu gelap */
+   }
+   .contact-form button {
+    background-color: #6c757d; /* Warna abu-abu lembut */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    border-radius: 50px; /* Membuat tombol menjadi bulat */
+    padding: 10px 30px; /* Padding dalam tombol */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi 
+   warna dan transformasi */
+   }
+   .contact-form button:hover {
+    background-color: #495057; /* Warna abu-abu lebih gelap saat di-hover */
+    transform: scale(1.05); /* Efek memperbesar sedikit saat di-hover */
+   }
+   /* Footer styling */
+   .footer {
+    background: #1f2a35; /* Warna latar belakang abu-abu sangat gelap */
+    color: #e9ecef; /* Warna teks abu-abu terang */
+    padding: 15px 0; /* Padding vertikal */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+   }
+   .footer .container {
+    max-width: 1200px; /* Membatasi lebar maksimal */
+    margin: auto; /* Rata tengah */
+    padding: 0 20px; /* Padding horizontal */
+   }
+   .footer p {
+    margin: 0; /* Menghapus margin */
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    margin-top: 15px; /* Jarak atas */
+   }
+   .footer a {
+    color: #adb5bd; /* Warna tautan abu-abu terang */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi warna dan 
+   transformasi */
+   }
+   .footer a:hover {
+    color: #ffffff; /* Warna putih saat di-hover */
+    transform: scale(1.1); /* Efek memperbesar sedikit saat di-hover */
+   }
+   .footer i {
+    font-size: 1.5rem; /* Ukuran ikon lebih besar */
+   }
+   .footer .social-links {
+    margin-top: 20px; /* Jarak atas */
+   }
+   .footer .social-links a {
+    margin-right: 15px; /* Jarak kanan antar tautan */
+    color: #adb5bd; /* Warna abu-abu terang */
+   }
+   .footer .social-links a:hover {
+    color: #ffffff; /* Warna putih saat di-hover */
+   }
+   
